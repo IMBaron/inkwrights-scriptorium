@@ -1,0 +1,59 @@
+name: Bug report
+description: Something in the app is wrong or unexpected
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem with Inkwright's Scriptorium.
+        Please do not include personal folders, API keys, e-mail addresses, or the text of a private document.
+        If you used **Help → Report a problem…** in the app, some of these fields may already be filled in.
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: Shown in Help → About, and in the in-app report.
+      placeholder: e.g. 0.9.8
+    validations:
+      required: true
+  - type: input
+    id: script
+    attributes:
+      label: Script
+      description: The writing style you had selected (for example Demotic, Devanagari, or a Latin cursive).
+      placeholder: e.g. Demotic
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      description: The language and mode you had selected, if any.
+      placeholder: e.g. English · write
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      description: Your system, as shown in the in-app report.
+      placeholder: e.g. Windows 10.0.22631 x64
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What happened
+      description: What you saw, including any error message.
+      placeholder: Describe the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What you did just before the problem appeared.
+      placeholder: |
+        1.
+        2.
+        3.
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: What should have happened instead.

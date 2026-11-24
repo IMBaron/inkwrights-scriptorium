@@ -1,0 +1,34 @@
+name: Feature request
+description: Suggest an improvement or a new capability
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for a suggestion for Inkwright's Scriptorium.
+        Please do not include personal folders, API keys, e-mail addresses, or the text of a private document.
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: What you would like the app to do.
+      placeholder: Describe the feature.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it would help
+      description: Who it is for, or what is awkward today.
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: Optional. Shown in Help → About if you are already using the app.
+      placeholder: e.g. 0.9.8
+  - type: input
+    id: script
+    attributes:
+      label: Script or language (if relevant)
+      description: Optional. Mention a script or language if the idea is about one.
